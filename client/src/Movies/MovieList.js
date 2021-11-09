@@ -1,9 +1,10 @@
 import React from 'react';
+import Movie from "./Movie";
 
-export default function MovieList(props) {
+export default function MovieList(Movie) {
   return (
     <div className="movie-list">
-      {props.movies.map(movie => (
+      {Movie.movies.map(movie => (
         <MovieDetails key={movie.id} movie={movie} />
       ))}
     </div>
